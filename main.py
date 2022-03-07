@@ -1,16 +1,26 @@
-# This is a sample Python script.
+# Python Program to build a Simple Calculator using Nested If
+choice = int(input("Enter your choice:n"))  # User's choice[1,2,3,4]if (choice>=1 and choice<=4):
+print("Enter two numbers: ")
+num1 = int(input())
+num2 = int(input())
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+if choice == 1: # To add two numbers
+  res = num1 + num2
+  print("Result = ", res)
 
+elif choice == 2: # To subtract two numbers
+  res = num1 - num2
+  print("Result = ", res)
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+elif choice == 3: # To multiply two numbers
+  res = num1 * num2
+  print("Result = ", res)
 
+elif choice == 4: # To get quotient with decimal value
+  res = num1 / num2
+  print("Result = ", res)
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+elif choice == 5:
+    exit()
+else:
+  print("Wrong input..!!")
